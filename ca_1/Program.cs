@@ -12,6 +12,7 @@ namespace ca_1
         {
             Console.WriteLine("Ququ!");
             Console.WriteLine("Ququ2!");
+            Console.WriteLine("Ququ3!");
         }
     }
 }
