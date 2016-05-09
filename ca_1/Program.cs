@@ -11,6 +11,7 @@ namespace ca_1
         static void Main(string[] args)
         {
             Console.WriteLine("Ququ!");
+            Console.WriteLine("Ququ2!");
         }
     }
 }
