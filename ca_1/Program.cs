@@ -8,11 +8,21 @@ namespace ca_1
 {
     class Program
     {
-        static void Main(string[] args)
+        
+
+
+        public static void Main()
         {
-            Console.WriteLine("Ququ!");
-            Console.WriteLine("Ququ2!");
-            Console.WriteLine("Ququ3!");
+            DateTimeOffset dto = new DateTimeOffset(DateTime.Now);
+            Console.WriteLine("{0} --> Unix Seconds: {1}", dto, dto.ToUnixTimeSeconds());
+
+            dto = new DateTimeOffset(1969, 12, 31, 23, 59, 0, TimeSpan.Zero);
+            Console.WriteLine("{0} --> Unix Seconds: {1}", dto, dto.ToUnixTimeSeconds());
+
+            dto = new DateTimeOffset(1970, 1, 1, 0, 1, 0, TimeSpan.Zero);
+            Console.WriteLine("{0} --> Unix Seconds: {1}", dto, dto.ToUnixTimeSeconds());
+
+            //Console.ReadLine();
         }
     }
 }
